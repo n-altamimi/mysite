@@ -64,9 +64,22 @@ section{
 .Main h2 span{
     display: inline-block;
     color: #994958;
-
     font-size: 2em;
     font-weight: 600;
+    border-right: 5px solid;
+    overflow: hidden;
+    animation: 
+    typing 2s,
+    cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor{
+    50% { border-color: transparent;}
+}
+
+@keyframes typing {
+    from { width: 0;}
+    to { width: 57%;}
 }
 
 .Main h3 {
