@@ -49,7 +49,6 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: top;
-    background: url(images/linux.PNG) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -61,13 +60,29 @@ section{
      font-size: 1.2em;
      font-weight: 500;
 }
+
 .Main h2 span{
     display: inline-block;
     color: #994958;
-
     font-size: 2em;
     font-weight: 600;
+    border-right: 5px solid;
+    overflow: hidden;
+    animation: 
+    typing 2s,
+    cursor .4s step-end infinite alternate;
 }
+
+@keyframes cursor{
+    50% { border-color: transparent;}
+}
+
+@keyframes typing {
+    from { width: 0;}
+    to { width: 57%;}
+}
+
+
 
 .Main h3 {
     color: #FDFFAB;
@@ -198,3 +213,65 @@ section{
     justify-content: center;
 
 }
+
+@media (max-width :600px){
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+    .title {
+        font-size: 1.4em;
+       
+
+    }
+    section{
+        padding: 80px 20px;
+       
+    }
+    .Main{
+        width: 100%;
+        z-index: 999;
+    }
+   
+
+    .Main-btn{
+        font-size: 1.0em;
+        margin-left: 50px;
+    }
+    
+    .Main h2{
+       margin-top: 20vh;
+        font-size: 1em;
+        margin-left: 5vh;
+        
+    }
+    .Main h2 span{
+         font-size: 1.4em;
+         
+     }
+
+    .Main h3{
+        font-size: 1em;
+        margin-left: 5vh;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .project-card{
+        width: calc(100% - 50px);
+    }
+    .card{
+        width: calc(100% - 50px);
+        margin-left: 30px;
+    }
+    
+ 
+
+}
+
