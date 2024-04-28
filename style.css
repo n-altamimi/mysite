@@ -49,6 +49,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: top;
+    background: url(images/linux.PNG) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
